@@ -1,0 +1,16 @@
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\bin\Debug\winform.exe.config
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\bin\Debug\winform.exe
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\bin\Debug\winform.pdb
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\bin\Debug\Dominio.dll
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\bin\Debug\Negocio.dll
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\bin\Debug\Dominio.pdb
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\bin\Debug\Negocio.pdb
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.csprojAssemblyReference.cache
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.Form1.resources
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.Properties.Resources.resources
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.csproj.GenerateResource.cache
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.csproj.CoreCompileInputs.cache
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.csproj.CopyComplete
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.exe
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.pdb
+C:\Users\msarfernandez\source\repos\pokedex-app\winform\obj\Debug\winform.frmAlta.resources
