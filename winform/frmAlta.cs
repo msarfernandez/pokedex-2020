@@ -14,9 +14,15 @@ namespace winform
 {
     public partial class frmAlta : Form
     {
+        private Pokemon pokemon = null;
         public frmAlta()
         {
             InitializeComponent();
+        }
+        public frmAlta(Pokemon poke)
+        {
+            InitializeComponent();
+            pokemon = poke;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -26,16 +32,22 @@ namespace winform
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Pokemon nuevo = new Pokemon();
+            
             PokemonNegocio negocio = new PokemonNegocio();
+            if (pokemon == null)
+                pokemon = new Pokemon();
 
-            nuevo.Nombre = txtNombre.Text;
-            nuevo.Descripcion = txtDescripcion.Text;
-            nuevo.Tipo = (Tipo)cboTipo.SelectedItem;
+            pokemon.Nombre = txtNombre.Text;
+            pokemon.Descripcion = txtDescripcion.Text;
+            pokemon.Tipo = (Tipo)cboTipo.SelectedItem;
+            pokemon.UrlImage = txtImagen.Text;
 
-            negocio.agregar(nuevo);
+            if (pokemon.Id == 0)
+                negocio.agregar(pokemon);
+            else
+                negocio.modificar(pokemon);
 
-            MessageBox.Show("Agregado Exitosamente", "Exito");
+            MessageBox.Show("Operacion realizada exitosamente", "Exito");
             Close();
 
 
@@ -46,6 +58,19 @@ namespace winform
             TipoNegocio tipoNegocio = new TipoNegocio();
 
             cboTipo.DataSource = tipoNegocio.listar();
+            cboTipo.ValueMember = "Id";
+            cboTipo.DisplayMember = "Descripcion";
+
+            cboTipo.SelectedIndex = -1;
+
+            if(pokemon != null)
+            {
+                txtNombre.Text = pokemon.Nombre;
+                txtDescripcion.Text = pokemon.Descripcion;
+                cboTipo.SelectedValue = pokemon.Tipo.Id;
+
+                Text = "Modificacion Pokemon";
+            }
         }
     }
 }
